@@ -19,10 +19,17 @@ nvim pyproject.toml
 python = "3.11.10"
 ```
 
+Make sure global python from pyenv is from 3.11.10 version before running the command down below
+```
+poetry env use python
+```
+
 Install open-webui
 ```
 poetry add open-webui
 ```
 
 ## Run OpenWebui
-
+```
+poetry run open-webui serve
+```
