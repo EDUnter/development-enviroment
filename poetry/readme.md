@@ -22,6 +22,12 @@ poetry init
 
 ### Step 4 - Install dependencies
 
+Before installing any dependency
+```shell
+sudo dnf group install "Development Tools"
+sudo dnf install python3-devel python3-pip pkgconf cython
+```
+
 ```shell
 poetry add tensorflow matplotlib
 ```
