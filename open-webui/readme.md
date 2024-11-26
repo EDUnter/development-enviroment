@@ -1,7 +1,7 @@
 # Open Webui
 
 ## Install Open Webui
-Install [poetry]()
+Install [poetry](https://github.com/EDUnter/development-enviroment/blob/main/poetry/readme.md)
 
 Create poetry env
 ```
@@ -19,7 +19,7 @@ nvim pyproject.toml
 python = "3.11.10"
 ```
 
-Make sure global python from pyenv is from 3.11.10 version before running the command down below
+Make sure global python from [pyenv](https://github.com/EDUnter/development-enviroment/blob/main/python/readme.md) is from 3.11.10 version before running the command down below
 ```
 poetry env use python
 ```
