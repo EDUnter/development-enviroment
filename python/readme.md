@@ -21,9 +21,13 @@ Reload bash shell
 ```
 
 ## Install Python through PyEnv
-First install sqlite
+First install python dependencies
 ```
-sudo dnf install sqlite sqlite-devel
+sudo dnf group install "Development Tools" -y
+sudo dnf install -y \
+    gcc zlib-devel bzip2 bzip2-devel readline readline-devel \
+    sqlite sqlite-devel openssl-devel tk-devel libffi-devel \
+    xz-devel libuuid-devel ncurses-devel
 ```
 
 Install python 3.11.10, as an example
