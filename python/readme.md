@@ -21,6 +21,11 @@ Reload bash shell
 ```
 
 ## Install Python through PyEnv
+First install sqlite
+```
+sudo dnf install sqlite sqlite-devel
+```
+
 Install python 3.11.10, as an example
 ```
 pyenv install 3.11.10
