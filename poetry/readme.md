@@ -67,5 +67,12 @@ source your-poetry-venv/bin/activate
 
 ```shell
 poetry shell
-ipython kernel install --name "your-new-poetry-env-name" --user
-# OR poetry run ipython kernel install --name "your-new-poetry-env-name" --user
+poetry run ipython kernel install --name "your-new-poetry-env-name" --user
+```
+
+### Other usefull commands
+
+#### Check which packages were installed without poetry
+```shell
+poetry run pip freeze
+```
