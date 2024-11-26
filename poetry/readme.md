@@ -32,8 +32,26 @@ sudo dnf install python3-devel python3-pip pkgconf cython
 poetry add tensorflow matplotlib
 ```
 
-### Step 5 - Get Poetry Environment Info Path
+If some dependency is having trouble building by source we can use a wheel.  
+Exmaple for numpy
+```shell
+poetry shell
+pip wheel --no-cache-dir --use-pep517 numpy==2.0.2
+export PKG_CONFIG_PATH=$(python3 -m sysconfig | grep configdir | cut -d'"' -f2)/pkgconfig
+```
 
+If bulding, using the commands from above also fails.
+```shell
+poetry run pip install numpy
+```
+
+Check numpy version
+```shell
+poetry shell
+python -c "import numpy; print(numpy.__version__)"e
+```
+
+### Step 5 - Get Poetry Environment Info Path
 
 ```shell
 poetry env info --path
