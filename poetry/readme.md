@@ -51,13 +51,13 @@ poetry shell
 python -c "import numpy; print(numpy.__version__)"e
 ```
 
-### Step 5 - Get Poetry Environment Info Path
+### Step 5 - Get Poetry Environment Info Pato, in case its needed manual debugging
 
 ```shell
-poetry env info --path
+poetry env info
 ```
 
-### Step 6 - Activate the Poetry Environment
+### Step 6 - Activate the Poetry Environment, in case its needed to manual activate. Otherwise, just use poerty shell to automatically activate poetry.
 
 ```shell
 source your-poetry-venv/bin/activate
@@ -66,5 +66,6 @@ source your-poetry-venv/bin/activate
 ### Step 7: Add the Poetry Environment as a Jupyter Kernel
 
 ```shell
+poetry shell
 ipython kernel install --name "your-new-poetry-env-name" --user
-# OR poetry run ipython kernel install --name "tessaract-ocr-python-tuto" --user
+# OR poetry run ipython kernel install --name "your-new-poetry-env-name" --user
