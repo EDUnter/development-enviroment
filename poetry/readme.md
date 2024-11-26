@@ -70,7 +70,14 @@ poetry shell
 poetry run ipython kernel install --name "your-new-poetry-env-name" --user
 ```
 
-### Other usefull commands
+### Other usefull stuff
+
+#### Change poetry python version
+```shell
+poetry env use python
+# poetry env use $(which python3.11)
+# poetry env use /path/to/python3.11
+```
 
 #### Check which packages were installed without poetry
 ```shell
