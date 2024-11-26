@@ -29,7 +29,8 @@ Install open-webui
 poetry add open-webui
 ```
 
-## Run OpenWebui
+## Run Open Webui
+Open Webui will be accessible through http://localhost:8080
 ```
 poetry run open-webui serve
 ```
