@@ -28,10 +28,6 @@ ollama pull gemma2
 ollama pull gemma2:2b
 ollama pull gemma2:27b
 
-ollama pull llava
-ollama pull llava:13b
-ollama pull llava:34b
-
 ollama pull command-r
 ```
 
@@ -39,6 +35,18 @@ Vison models
 ```
 ollama pull llama3.2-vision
 ollama pull llama3.2-vision:90b
+
+ollama pull llava
+ollama pull llava:13b
+ollama pull llava:34b
+
+ollama pull llava-llama3
+
+ollama pull moondream
+
+ollama pull llava-phi3
+
+ollama pull minicpm-v
 ```
 
 Coding models
