@@ -74,28 +74,11 @@ npm install -g electron
 
 Create the desktop app
 ```
-mdkir electron-open-webui
+mkdir electron-open-webui
 cd electron-open-webui
 npm init -y
-nvim package.json
-```
-```
-{
-  "name": "electron-open-webui",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
-}
-```
-```
-nvim main.js
+npm install electron --save-dev
+nvim index.js
 ```
 ```
 const { app, BrowserWindow } = require('electron');
@@ -132,7 +115,7 @@ app.on('window-all-closed', () => {
 
 Test the app
 ```
-npm start
+npx electron .
 ```
 
 Package the app
