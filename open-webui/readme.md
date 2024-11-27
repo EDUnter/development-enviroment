@@ -69,7 +69,7 @@ sudo systemctl enable open-webui.service
 Install nodejs and electron
 ```
 sudo dnf install nodejs npm
-npm install -g electron
+sudo npm install -g electron
 ```
 
 Create the desktop app
@@ -119,4 +119,6 @@ npx electron .
 ```
 
 Package the app
-
+```
+sudo npm install -g electron-packager
+```
