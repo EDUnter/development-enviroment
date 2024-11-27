@@ -64,3 +64,76 @@ sudo systemctl daemon-reload
 sudo systemctl start open-webui.service
 sudo systemctl enable open-webui.service
 ```
+
+## Run Open WebUI as a desktop app
+Install nodejs and electron
+```
+sudo dnf install nodejs npm
+npm install -g electron
+```
+
+Create the desktop app
+```
+mdkir electron-open-webui
+cd electron-open-webui
+npm init -y
+nvim package.json
+```
+```
+{
+  "name": "electron-open-webui",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+```
+```
+nvim main.js
+```
+```
+const { app, BrowserWindow } = require('electron');
+
+let mainWindow;
+
+app.on('ready', () => {
+    mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            contextIsolation: true,
+            enableRemoteModule: false,
+            nodeIntegration: false,
+        },
+    });
+
+    // Load your web app
+    mainWindow.loadURL('http://localhost:8080'); // Replace with your desired URL
+
+    // Remove the menu bar
+    mainWindow.setMenuBarVisibility(false);
+
+    // Optional: Uncomment to open dev tools during development
+    // mainWindow.webContents.openDevTools();
+});
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+});
+```
+
+Test the app
+```
+npm start
+```
+
+Package the app
+
