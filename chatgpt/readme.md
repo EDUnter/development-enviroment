@@ -60,7 +60,7 @@ electron-packager . chatgpt --platform=linux --arch=x64 --overwrite
 cp -r chatgpt ~/.local/share/
 ```
 
-Create desktop icon
+Create desktop shortcut
 ```
 nvim ~/.local/share/applications/chatgpt.desktop
 ```
@@ -72,6 +72,11 @@ Icon=/home/edunter/.local/share/chatgpt/chatgpt.png
 StartupWMClass=electron-chatgpt
 Type=Application
 Categories=Utility;
+```
+
+Download [desktop shortcut icon}(https://github.com/EDUnter/development-enviroment/blob/main/chatgpt/chatgpt-icon.png)
+```
+cp ~/Downloads/chatgpt-icon.png /home/edunter/.local/share/chatgpt/chatgpt-icon.png
 ```
 
 Notes:
