@@ -56,20 +56,20 @@ npx electron .
 Package the app
 ```
 sudo npm install -g electron-packager
-electron-packager . open-webui --platform=linux --arch=x64 --overwrite
-cp -r open-webui ~/.local/share/
+electron-packager . chatgpt --platform=linux --arch=x64 --overwrite
+cp -r chatgpt ~/.local/share/
 ```
 
 Create desktop icon
 ```
-nvim ~/.local/share/applications/OpenWebUI.desktop
+nvim ~/.local/share/applications/chatgpt.desktop
 ```
 ```
 [Desktop Entry]
-Name=Open WebUI
-Exec=/home/edunter/.local/share/open-webui/open-webui
-Icon=/home/edunter/.local/share/open-webui/open-webui-icon.png
-StartupWMClass=electron-open-webui
+Name=ChatGPT
+Exec=/home/edunter/.local/share/chat-gpt/chat-gpt
+Icon=/home/edunter/.local/share/chat-gpt/chat-gpt.png
+StartupWMClass=electron-chat-gpt
 Type=Application
 Categories=Utility;
 ```
