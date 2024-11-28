@@ -74,7 +74,7 @@ Type=Application
 Categories=Utility;
 ```
 
-Download [desktop shortcut icon}(https://github.com/EDUnter/development-enviroment/blob/main/chatgpt/chatgpt-icon.png)
+Download [desktop shortcut icon](https://github.com/EDUnter/development-enviroment/blob/main/chatgpt/chatgpt-icon.png)
 ```
 cp ~/Downloads/chatgpt-icon.png /home/edunter/.local/share/chatgpt/chatgpt-icon.png
 ```
