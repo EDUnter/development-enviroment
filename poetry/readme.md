@@ -79,6 +79,17 @@ poetry env use python
 # poetry env use /path/to/python3.11
 ```
 
+#### Manage Jupyter Kernels
+List jupyter kernels
+```shell
+jupyter kernelspec list
+```
+
+Unninstall jupyter kernel
+```shell
+jupyter kernelspec uninstall <kernel-name>
+```
+
 #### Check which packages were installed without poetry
 ```shell
 poetry run pip freeze
