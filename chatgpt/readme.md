@@ -67,9 +67,9 @@ nvim ~/.local/share/applications/chatgpt.desktop
 ```
 [Desktop Entry]
 Name=ChatGPT
-Exec=/home/edunter/.local/share/chat-gpt/chat-gpt
-Icon=/home/edunter/.local/share/chat-gpt/chat-gpt.png
-StartupWMClass=electron-chat-gpt
+Exec=/home/edunter/.local/share/chatgpt
+Icon=/home/edunter/.local/share/chatgpt/chatgpt.png
+StartupWMClass=electron-chatgpt
 Type=Application
 Categories=Utility;
 ```
