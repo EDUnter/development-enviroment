@@ -139,6 +139,11 @@ Type=Application
 Categories=Utility;
 ```
 
+Download [desktop shortcut icon](https://github.com/EDUnter/development-enviroment/blob/main/open-webui/open-webui-icon.png)
+```
+cp ~/Downloads/open-webui-icon.png /home/edunter/.local/share/open-webui/open-webui-icon.png
+```
+
 Notes:  
 If the window appears open in a new icon on dock use xprop and click in the open webui app to check the WM_CLASS.  
 If its WM_CLASS differs from the desktop parameter `StartupWMClass`, change it accordingly.
