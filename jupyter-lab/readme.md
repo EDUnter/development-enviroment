@@ -99,15 +99,18 @@ nvim ~/.local/share/applications/JupyterLab.desktop
 [Desktop Entry]
 Name=Jupyter Lab
 Exec=/home/edunter/.local/share/jupyter-lab/jupyter-lab
-Icon=/home/edunter/.local/share/jupyter-lab/jupyter-lab-icon.png
+Icon=/home/edunter/.local/share/jupyter-lab/jupyter-lab-dracula-icon.png
 StartupWMClass=electron-jupyter-lab
 Type=Application
 Categories=Utility;
 ```
 
-Download [desktop shortcut icon](https://github.com/EDUnter/development-enviroment/blob/main/jupyter-lab/jupyter-lab-icon.png)
+Download icons
+- [desktop shortcut icon](https://github.com/EDUnter/development-enviroment/blob/main/jupyter-lab/jupyter-lab-icon.png)
+- [dracula desktop shortcut icon](https://github.com/EDUnter/development-enviroment/blob/main/jupyter-lab/jupyter-dracula-lab-icon.png)
 ```
 cp ~/Downloads/jupyter-lab-icon.png /home/edunter/.local/share/jupyter-lab/jupyter-lab-icon.png
+cp ~/Downloads/jupyter-lab-icon.png /home/edunter/.local/share/jupyter-lab/jupyter-lab-dracula-icon.png
 ```
 
 Notes:  
