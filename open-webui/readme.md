@@ -150,3 +150,10 @@ If its WM_CLASS differs from the desktop parameter `StartupWMClass`, change it a
 ```
 xprop | grep WM_CLASS
 ```
+
+## Keybindings
+```
+Name -> open-webui
+Command -> /home/edunter/.local/share/open-webui/open-webui
+Shortcut -> Super+u
+```
