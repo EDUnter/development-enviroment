@@ -119,3 +119,44 @@ If its WM_CLASS differs from the desktop parameter `StartupWMClass`, change it a
 ```
 xprop | grep WM_CLASS
 ```
+
+## Create a service for Jupyter Lab
+```
+sudo nvim /etc/systemd/system/jupyter-lab.service
+```
+```
+[Unit]
+Description=Jupyter Lab
+After=network.target
+
+[Service]
+Type=simple
+User=edunter
+Group=edunter
+WorkingDirectory=/home/edunter
+ExecStart=/home/edunter/.pyenv/shims/jupyter-lab --no-browser --ip=0.0.0.0
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+```
+sudo systemctl daemon-reload
+sudo systemctl start jupyter-lab
+sudo systemctl enable jupyter-lab
+sudo systemctl status jupyter-lab
+```
+
+## Run Jupyter Lab on terminal
+Add alias for `jupyter-lab`
+```
+nvim .bashrc
+```
+```
+alias jupyter-lab='/home/edunter/.local/share/jupyter-lab/jupyter-lab'
+```
+
+```
+. .bashrc
+jupyter-lab
+```
