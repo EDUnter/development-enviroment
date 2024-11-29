@@ -160,3 +160,10 @@ alias jupyter-lab='/home/edunter/.local/share/jupyter-lab/jupyter-lab'
 . .bashrc
 jupyter-lab
 ```
+
+## Keybinds
+```
+Name -> jupyter-lab
+Command -> /home/edunter/.local/share/jupyter-lab/jupyter-lab
+Shortcut -> Super+j
+```
