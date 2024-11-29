@@ -85,3 +85,10 @@ If its WM_CLASS differs from the desktop parameter StartupWMClass, change it acc
 ```
 xprop | grep WM_CLASS
 ```
+
+# Keybindings
+```
+Name -> chatgpt
+Command -> /home/edunter/.local/share/chatgpt/chatgpt
+Shortcut -> Super+m
+```
