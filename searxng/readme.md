@@ -6,4 +6,5 @@
 mdkir -p ~/.scritps
 nvim ~/.scripts/install-searxng.sh
 chmod +x ~/.scripts/install-searxng.sh
+~/.scripts/install-searxng.sh
 ```
