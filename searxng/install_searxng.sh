@@ -33,14 +33,20 @@ podman ps
 # Create a systemd service file for the SearXNG container
 sudo tee /etc/systemd/system/searxng.service > /dev/null <<EOF
 [Unit]
-Description=SearXNG container
-After=network.target
+Description=SearXNG Service
+After=network-online.target
+
 [Service]
-Restart=always
 ExecStart=/usr/bin/podman start -a searxng
 ExecStop=/usr/bin/podman stop -t 2 searxng
+User=edunter
+Group=edunter
+Restart=always
+RestartSec=3
+Environment="PATH=/home/edunter/.cargo/bin:/home/edunter/.local/bin:/home/edunter/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin"
+
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 EOF
 
 # Reload systemd to recognize the new service
