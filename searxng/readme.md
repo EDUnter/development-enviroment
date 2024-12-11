@@ -1,10 +1,17 @@
 # SearXNG
 
 ## Install SearXNG
-[install_searxng.sh](https://github.com/EDUnter/development-enviroment/blob/main/searxng/install_searxng.sh)
+
 ```
-mdkir -p ~/.scritps
-nvim ~/.scripts/install-searxng.sh
-chmod +x ~/.scripts/install-searxng.sh
-~/.scripts/install-searxng.sh
+cd ~/Development/
+git clone https://github.com/searxng/searxng.git
+cd searxng
+make docker.build
+docker image ls
+PORT=32768
+```
+
+## Run SearXNG
+```
+docker run --rm -d -p 32768:8080 -v "${PWD}/searxng:/etc/searchxng" -e "BASE_URL=http://localhost:$PORT/" -e "INSTANCE_NAME=searxng_instance" searxng/searxng
 ```
