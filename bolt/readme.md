@@ -23,7 +23,8 @@ cd electron-bolt
 npm init -y
 npm install electron --save-dev
 nvim index.js
-
+```
+```
 const { app, BrowserWindow } = require('electron');
 
 let mainWindow;
