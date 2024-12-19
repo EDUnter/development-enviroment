@@ -65,20 +65,20 @@ npx electron .
 Package the app
 ```
 sudo npm install -g electron-packager
-electron-packager . chatgpt --platform=linux --arch=x64 --overwrite
-cp -r chatgpt ~/.local/share/
+electron-packager . bolt --platform=linux --arch=x64 --overwrite
+cp -r bolt ~/.local/share/
 ```
 
 Create desktop shortcut
 ```
-nvim ~/.local/share/applications/chatgpt.desktop
+nvim ~/.local/share/applications/bolt.desktop
 ```
 ```
 [Desktop Entry]
 Name=Bolt
 Exec=/home/edunter/.local/share/bolt
 Icon=/home/edunter/.local/share/bolt/bolt.png
-StartupWMClass=electron-chatgpt
+StartupWMClass=electron-bolt
 Type=Application
 Categories=Utility;
 ```
