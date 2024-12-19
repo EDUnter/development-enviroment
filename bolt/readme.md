@@ -66,7 +66,7 @@ Package the app
 ```
 sudo npm install -g electron-packager
 electron-packager . bolt --platform=linux --arch=x64 --overwrite
-cp -r bolt ~/.local/share/
+cp -r bolt-linux-x64/ ~/.local/share/bolt
 ```
 
 Create desktop shortcut
@@ -83,8 +83,9 @@ Type=Application
 Categories=Utility;
 ```
 
-Download desktop shortcut icon
+Download [desktop shortcut icon](https://github.com/EDUnter/development-enviroment/blob/main/bolt/bolt-icon.png)
 ```
+cp -r ~/Downloads/bolt-icon.png ~/.local/share/bolt
 ```
 
 Notes: If the window appears open in a new icon on dock use xprop and click in the open webui app to check the WM_CLASS. If its WM_CLASS differs from the desktop parameter StartupWMClass, change it accordingly.
