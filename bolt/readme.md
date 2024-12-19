@@ -41,7 +41,7 @@ app.on('ready', () => {
     });
 
     // Load your web app
-    mainWindow.loadURL('https://localhost:3000'); // Replace with your desired URL
+    mainWindow.loadURL('http://localhost:3000'); // Replace with your desired URL
 
     // Remove the menu bar
     mainWindow.setMenuBarVisibility(false);
