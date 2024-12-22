@@ -6,8 +6,17 @@
 cd ~/Development/
 git clone https://github.com/searxng/searxng.git
 cd searxng
-make docker.build
-docker image ls
+nvim searx/settings.yml
+```
+Add json to "formats"
+```
+  formats:
+    - html
+    - json
+```
+```
+sudo make docker.build
+sudo docker image ls
 PORT=32768
 ```
 
