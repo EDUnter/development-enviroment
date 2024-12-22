@@ -5,7 +5,7 @@
 After installing poetry reload terminal
 
 ```shell
-python3 -m pip install poetry
+python -m pip install poetry
 ```
 
 ### Step 2 - Verify Poetry Installation
