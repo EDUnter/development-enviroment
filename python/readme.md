@@ -36,8 +36,8 @@ pyenv install 3.11.10
 ```
 Add python3.11.10 to pyenv global
 ```
-pyenv global python3.11.10
+pyenv global 3.11.10
 # Append multiple python versions to pyenv
-pyenv global python3.11.10 python3.13.0
+pyenv global 3.11.10 3.13.0
 ```
 
