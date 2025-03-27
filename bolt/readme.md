@@ -91,7 +91,7 @@ nvim ~/.local/share/applications/bolt.desktop
 [Desktop Entry]
 Name=Bolt
 Exec=/home/edunter/.local/share/bolt
-Icon=/home/edunter/.local/share/bolt/bolt.png
+Icon=/home/edunter/.local/share/bolt/bolt-icon.png
 StartupWMClass=electron-bolt
 Type=Application
 Categories=Utility;
