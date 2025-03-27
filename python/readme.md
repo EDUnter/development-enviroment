@@ -17,7 +17,7 @@ eval "$(pyenv init -)"
 ```
 Reload bash shell
 ```
-. .bashrc
+. ~/.bashrc
 ```
 
 ## Install Python through PyEnv
