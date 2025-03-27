@@ -23,7 +23,7 @@ pnpm install
 pnpm run dev
 ```
 
-## Run Open WebUI as a desktop app
+## Run Bolt as a desktop app
 Install nodejs, npm and electron
 ```
 sudo dnf install nodejs npm
