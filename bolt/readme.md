@@ -1,9 +1,23 @@
 # Bolt
 
 ## Install Bolt
+Clone repo
 ```
 git clone https://github.com/coleam00/bolt.new-any-llm.git
 cd bolt.new-any-llm/
+```
+
+Provide Ollama API key
+```
+mv .env.example .env
+nvim .env.example
+```
+```
+OLLAMA_API_BASE_URL=http://127.0.0.1:11434
+```
+
+Install dependencies and test it
+```
 sudo npm install -g pnpm
 pnpm install
 pnpm run dev
