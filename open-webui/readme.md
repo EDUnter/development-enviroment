@@ -5,7 +5,7 @@ Install [poetry](https://github.com/EDUnter/development-enviroment/blob/main/poe
 
 Create poetry env
 ```
-mdkir open-webui
+mkdir open-webui
 cd open-webui
 poetry init -n
 ```
