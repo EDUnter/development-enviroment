@@ -32,7 +32,7 @@ Go to `Cursor Settings -> Models -> Click Add model and write 'qwen2.5-coder'.
 Then scroll down to OpenAI API Key and write 'ollama' as the api key.
 Also, under 'Override OpenAI Base URL' put the link cloudflare provided for accessing the tunnel and add '/v1' to the end of it.
 
-## Install Ngrok (not Working)
+## Install Ngrok
 Install snapd
 ```
 sudo dnf install -y snapd
@@ -48,3 +48,10 @@ Go to [Ngrok](https://dashboard.ngrok.com/get-started/setup/linux) and save toke
 ```
 ngrok config add-authtoken <token>
 ```
+
+Create the tunnel
+```
+ngrok http 11434 --host-header="localhost:11434"
+```
+Now, return to [Configure cursor](#configure-cursor).
+
