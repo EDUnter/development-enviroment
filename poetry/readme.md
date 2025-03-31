@@ -64,6 +64,8 @@ python -m pip install ipykernel
 python -m ipykernel install --user --name my_project_env
 ```
 
+Note: If the new jupyter kernel does not show, just restart the IDE.
+
 ### Other usefull stuff
 
 #### Change poetry python version
