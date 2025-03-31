@@ -45,29 +45,23 @@ If bulding, using the commands from above also fails.
 poetry run pip install numpy
 ```
 
-Check numpy version
-```shell
-poetry shell
-python -c "import numpy; print(numpy.__version__)"e
-```
-
-### Step 5 - Get Poetry Environment Info Pato, in case its needed manual debugging
-
+Get Poetry Environment Info Path, in case its needed manual debugging
 ```shell
 poetry env info
 ```
 
-### Step 6 - Activate the Poetry Environment, in case its needed to manual activate. Otherwise, just use poerty shell to automatically activate poetry.
+Check numpy version
+```shell
+source your-poetry-venv/bin/activate
+python -c "import numpy; print(numpy.__version__)"e
+```
+
+### Step 5: Add the Poetry Environment as a Jupyter Kernel
 
 ```shell
 source your-poetry-venv/bin/activate
-```
-
-### Step 7: Add the Poetry Environment as a Jupyter Kernel
-
-```shell
-poetry shell
-poetry run ipython kernel install --name "your-new-poetry-env-name" --user
+python -m pip install ipykernel
+python -m ipykernel install --user --name my_project_env
 ```
 
 ### Other usefull stuff
